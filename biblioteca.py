@@ -139,4 +139,41 @@ class Ciclista(Animal):
 class Triatleta(Corredor, Nadador, Ciclista):
     def __init__(self, nome, peso):
         super().__init__(nome, peso)
-    def
+
+"""with open("teste01.txt", "a") as arq:
+            texto = input("digite um texto: ")
+            arq.write(f"{texto}\n")
+
+with open("teste01.txt", "r") as arq2:
+    texto2 = arq2.read()
+    print(texto2)
+"""
+
+def entrada(entrada):
+        with open("teste01.txt", "a") as arq:
+            arq.write(f"{entrada}\n")
+def saida():
+    with open("teste01.txt", "r") as arq2:
+        texto2 = arq2.read()
+        print(texto2)
+
+
+
+def  pesquisar(texto):
+    cont=0
+    with open("Texto2.txt", "r") as arquivo:
+        for x in arquivo:
+            if texto in x:
+                cont+=1
+    print(cont)
+
+
+
+
+
+
+
+
+
+
+
